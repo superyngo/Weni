@@ -14,10 +14,6 @@ categories = ["command-line-utilities"]
 # Core functionality
 sysinfo = "0.31"
 
-# Battery - disabled on i686-pc-windows-msvc due to compilation issues
-[target.'cfg(not(all(target_os = "windows", target_arch = "x86")))'.dependencies]
-battery = "0.7"
-
 # CLI & serialization
 pico-args = "0.5"
 serde = { version = "1.0", features = ["derive"] }
@@ -29,3 +25,7 @@ comfy-table = "7.1"
 
 # Error handling
 anyhow = "1.0"
+
+# Battery - disabled on i686-pc-windows-msvc due to compilation issues
+[target.'cfg(not(all(target_os = "windows", target_arch = "x86")))'.dependencies]
+battery = "0.7"
