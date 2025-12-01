@@ -135,9 +135,25 @@ src/
 
 ## 跨平台支援
 
-✅ Windows
-✅ Linux
-✅ macOS
+✅ **Windows**
+  - x86_64 (64-bit)
+  - i686 (32-bit)
+
+✅ **Linux**
+  - x86_64 (64-bit, glibc)
+  - i686 (32-bit, glibc)
+  - ARMv7 (32-bit ARM)
+  - ARM64 (aarch64)
+
+✅ **Linux musl**（靜態鏈接版本）
+  - x86_64-musl
+  - i686-musl
+  - ARMv7-musl
+  - ARM64-musl
+
+✅ **macOS**
+  - x86_64 (Intel)
+  - aarch64 (Apple Silicon)
 
 ## 使用範例
 

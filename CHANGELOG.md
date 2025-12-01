@@ -28,8 +28,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - 自訂監控間隔（`--interval`）
 
 - **跨平台支援**
-  - Windows (x86_64)
-  - Linux (x86_64, ARM64, musl)
+  - Windows (x86_64, i686)
+  - Linux (x86_64, i686, ARMv7, ARM64)
+  - Linux musl (x86_64, i686, ARMv7, ARM64) - 靜態鏈接版本
   - macOS (Intel, Apple Silicon)
 
 ### Technical Details
