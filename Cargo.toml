@@ -1,0 +1,29 @@
+[package]
+name = "weni"
+version = "0.1.0"
+edition = "2021"
+authors = ["wen"]
+description = "A lightweight cross-platform system information CLI tool"
+license = "MIT"
+repository = "https://github.com/wen/weni"
+homepage = "https://github.com/wen/weni"
+keywords = ["cli", "system-info", "sysinfo", "cross-platform", "monitoring"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+# Core functionality
+sysinfo = "0.31"
+battery = "0.7"
+display-info = "0.5"
+
+# CLI & serialization
+pico-args = "0.5"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Display
+colored = "2.1"
+comfy-table = "7.1"
+
+# Error handling
+anyhow = "1.0"
