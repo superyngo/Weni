@@ -13,6 +13,9 @@ categories = ["command-line-utilities"]
 [dependencies]
 # Core functionality
 sysinfo = "0.31"
+
+# Battery - disabled on i686-pc-windows-msvc due to compilation issues
+[target.'cfg(not(all(target_os = "windows", target_arch = "x86")))'.dependencies]
 battery = "0.7"
 
 # CLI & serialization

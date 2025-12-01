@@ -1,5 +1,4 @@
 use anyhow::Result;
-use battery::{Manager, State};
 use serde::Serialize;
 
 #[derive(Debug, Clone, Serialize)]
@@ -13,8 +12,20 @@ pub struct BatteryInfo {
     pub temperature: Option<f32>,
 }
 
+// Battery functionality is disabled on i686-pc-windows-msvc due to battery crate compilation issues
+#[cfg(all(target_os = "windows", target_arch = "x86"))]
 impl BatteryInfo {
     pub fn collect() -> Result<Option<Self>> {
+        // Battery crate doesn't compile on i686-pc-windows-msvc
+        Ok(None)
+    }
+}
+
+#[cfg(not(all(target_os = "windows", target_arch = "x86")))]
+impl BatteryInfo {
+    pub fn collect() -> Result<Option<Self>> {
+        use battery::{Manager, State};
+        
         let manager = Manager::new()?;
 
         let batteries: Vec<_> = manager.batteries()?.collect::<Result<Vec<_>, _>>()?;
