@@ -7,7 +7,11 @@
       "Bash(.\\target\\release\\weni.exe:*)",
       "Bash(target/release/weni.exe:*)",
       "Bash(gh run list:*)",
-      "Bash(gh run view:*)"
+      "Bash(gh run view:*)",
+      "Bash(.\\target\\debug\\weni.exe:*)",
+      "Bash(rustc --version:*)",
+      "Bash(target/debug/weni.exe:*)",
+      "Bash(cargo tree:*)"
     ],
     "deny": [],
     "ask": []

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Weni Remote Installation Script for Linux/macOS
-# Usage: curl -fsSL https://raw.githubusercontent.com/superyngo/Weni/main/install.sh | bash
+# weni Remote Installation Script for Linux/macOS
+# Usage: curl -fsSL https://raw.githubusercontent.com/superyngo/weni/main/install.sh | bash
 
 set -e
 
@@ -18,7 +18,7 @@ print_warning() { echo -e "${YELLOW}$1${NC}"; }
 
 # Configuration
 APP_NAME="weni"
-REPO="superyngo/Weni"
+REPO="superyngo/weni"
 INSTALL_DIR="$HOME/.local/bin"
 BIN_PATH="$INSTALL_DIR/$APP_NAME"
 
@@ -219,7 +219,7 @@ configure_path() {
 
 # Installation function
 install_weni() {
-    print_info "=== Weni Installation Script ==="
+    print_info "=== weni Installation Script ==="
     echo ""
 
     detect_platform
@@ -246,7 +246,7 @@ install_weni() {
 
 # Uninstallation function
 uninstall_weni() {
-    print_info "=== Weni Uninstallation Script ==="
+    print_info "=== weni Uninstallation Script ==="
     echo ""
 
     # Remove binary

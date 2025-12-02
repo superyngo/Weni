@@ -13,16 +13,19 @@ A lightweight cross-platform system information CLI tool written in Rust.
 ### Quick Install from GitHub Release (Recommended)
 
 **Linux/macOS:**
+
 ```bash
-curl -fsSL https://raw.githubusercontent.com/superyngo/Weni/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/superyngo/weni/main/install.sh | bash
 ```
 
 **Windows (PowerShell as Administrator):**
+
 ```powershell
-irm https://raw.githubusercontent.com/superyngo/Weni/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/superyngo/weni/main/install.ps1 | iex
 ```
 
 The installer will:
+
 - Download the latest pre-compiled binary from GitHub releases
 - Install to `~/.local/bin` (Linux/macOS) or `%LOCALAPPDATA%\Programs\weni` (Windows)
 - Add it to your PATH automatically
@@ -31,14 +34,15 @@ The installer will:
 
 ```bash
 # Clone the repository
-git clone https://github.com/superyngo/Weni.git
-cd Weni
+git clone https://github.com/superyngo/weni.git
+cd weni
 
 # Build the release version
 cargo build --release
 ```
 
 The executable will be located at:
+
 - Windows: `target/release/weni.exe`
 - Linux/macOS: `target/release/weni`
 
@@ -47,16 +51,19 @@ You can manually copy it to your preferred directory in PATH.
 ## Uninstallation
 
 **Linux/macOS:**
+
 ```bash
-curl -fsSL https://raw.githubusercontent.com/superyngo/Weni/main/install.sh | bash -s uninstall
+curl -fsSL https://raw.githubusercontent.com/superyngo/weni/main/install.sh | bash -s uninstall
 ```
 
 **Windows (PowerShell):**
+
 ```powershell
-irm https://raw.githubusercontent.com/superyngo/Weni/main/install.ps1 | iex -Uninstall
+irm https://raw.githubusercontent.com/superyngo/weni/main/install.ps1 | iex -Uninstall
 ```
 
 Or manually remove:
+
 - Linux/macOS: `rm ~/.local/bin/weni`
 - Windows: Remove `%LOCALAPPDATA%\Programs\weni` directory
 
@@ -227,11 +234,11 @@ src/
 
 ✅ **Pre-compiled Binaries (12 Platforms)**
 
-| Platform      | Architecture               | Description            |
-| ------------- | -------------------------- | ---------------------- |
-| Windows       | x86_64, i686               | 64-bit and 32-bit      |
-| Linux (glibc) | x86_64, i686, ARMv7, ARM64 | Standard version       |
-| Linux (musl)  | x86_64, i686, ARMv7, ARM64 | Static-linked version  |
+| Platform      | Architecture               | Description             |
+| ------------- | -------------------------- | ----------------------- |
+| Windows       | x86_64, i686               | 64-bit and 32-bit       |
+| Linux (glibc) | x86_64, i686, ARMv7, ARM64 | Standard version        |
+| Linux (musl)  | x86_64, i686, ARMv7, ARM64 | Static-linked version   |
 | macOS         | x86_64, aarch64            | Intel and Apple Silicon |
 
 ## Examples
@@ -300,16 +307,19 @@ MIT License
 ### 從 GitHub Release 快速安裝（推薦）
 
 **Linux/macOS:**
+
 ```bash
-curl -fsSL https://raw.githubusercontent.com/superyngo/Weni/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/superyngo/weni/main/install.sh | bash
 ```
 
 **Windows (以管理員身份執行 PowerShell):**
+
 ```powershell
-irm https://raw.githubusercontent.com/superyngo/Weni/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/superyngo/weni/main/install.ps1 | iex
 ```
 
 安裝程式將會：
+
 - 從 GitHub releases 下載最新的預編譯二進制檔案
 - 安裝到 `~/.local/bin` (Linux/macOS) 或 `%LOCALAPPDATA%\Programs\weni` (Windows)
 - 自動加入到 PATH 環境變數
@@ -318,14 +328,15 @@ irm https://raw.githubusercontent.com/superyngo/Weni/main/install.ps1 | iex
 
 ```bash
 # 複製儲存庫
-git clone https://github.com/superyngo/Weni.git
-cd Weni
+git clone https://github.com/superyngo/weni.git
+cd weni
 
 # 編譯 release 版本
 cargo build --release
 ```
 
 執行檔位於：
+
 - Windows: `target/release/weni.exe`
 - Linux/macOS: `target/release/weni`
 
@@ -334,16 +345,19 @@ cargo build --release
 ## 解除安裝
 
 **Linux/macOS:**
+
 ```bash
-curl -fsSL https://raw.githubusercontent.com/superyngo/Weni/main/install.sh | bash -s uninstall
+curl -fsSL https://raw.githubusercontent.com/superyngo/weni/main/install.sh | bash -s uninstall
 ```
 
 **Windows (PowerShell):**
+
 ```powershell
-irm https://raw.githubusercontent.com/superyngo/Weni/main/install.ps1 | iex -Uninstall
+irm https://raw.githubusercontent.com/superyngo/weni/main/install.ps1 | iex -Uninstall
 ```
 
 或手動移除：
+
 - Linux/macOS: `rm ~/.local/bin/weni`
 - Windows: 刪除 `%LOCALAPPDATA%\Programs\weni` 目錄
 

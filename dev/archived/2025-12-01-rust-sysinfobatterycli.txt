@@ -8,7 +8,7 @@
 │                 ▘▘ ▝▝                 │                                      │
 │                                       │                                      │
 │        Sonnet 4.5 · Claude Pro        │                                      │
-│   D:\Users\user\Documents\rust\Weni   │                                      │
+│   D:\Users\user\Documents\rust\weni   │                                      │
 ╰──────────────────────────────────────────────────────────────────────────────╯
 ══════════════════ Conversation compacted · ctrl+o for history ═════════════════
   ⎿  Read CHANGELOG.md (42 lines)
@@ -33,7 +33,7 @@
   ⎿  Updated LICENSE with 1 addition and 1 removal                      
        1    MIT License
        2    
-       3 -  Copyright (c) 2025 Weni Contributors
+       3 -  Copyright (c) 2025 weni Contributors
        3 +  Copyright (c) 2025 wen
        4    
        5    Permission is hereby granted, free of charge, to any person 
@@ -96,19 +96,19 @@
      … +7 lines (ctrl+o to expand)
 
 ● Bash(git remote -v)
-  ⎿  origin	https://github.com/superyngo/Weni.git (fetch
-     origin	https://github.com/superyngo/Weni.git (push)
+  ⎿  origin	https://github.com/superyngo/weni.git (fetch
+     origin	https://github.com/superyngo/weni.git (push)
 
 ● Bash(git push -u origin main)
   ⎿  branch 'main' set up to track 'origin/main'.
-     To https://github.com/superyngo/Weni.git
+     To https://github.com/superyngo/weni.git
       * [new branch]      main -> main
 
-● Bash(git tag -a v0.1.0 -m "Weni v0.1.0 - Initial Release…)
+● Bash(git tag -a v0.1.0 -m "weni v0.1.0 - Initial Release…)
   ⎿  (No content)
 
 ● Bash(git push origin v0.1.0)
-  ⎿  To https://github.com/superyngo/Weni.git
+  ⎿  To https://github.com/superyngo/weni.git
       * [new tag]         v0.1.0 -> v0.1.0
 
 ● 已完成所有 GitHub 設置和發布準備工作：
@@ -147,7 +147,7 @@
   發布內容
 
   標籤 v0.1.0 已推送到
-  https://github.com/superyngo/Weni.git，將自動構建以下版本：
+  https://github.com/superyngo/weni.git，將自動構建以下版本：
 
   Linux:
   - weni-linux-x86_64.tar.gz (glibc)
@@ -497,12 +497,12 @@ ase.yml")建構所有targets
 
 ● Bash(git tag -d v0.1.0 && git push origin :refs/tags/v0.1.0 && git push)
   ⎿  Deleted tag 'v0.1.0' (was 2320971)      
-     To https://github.com/superyngo/Weni.git
+     To https://github.com/superyngo/weni.git
       - [deleted]         v0.1.0
      … +2 lines (ctrl+o to expand)
 
-● Bash(git tag -a v0.1.0 -m "Weni v0.1.0 - Initial Release…)
-  ⎿  To https://github.com/superyngo/Weni.git
+● Bash(git tag -a v0.1.0 -m "weni v0.1.0 - Initial Release…)
+  ⎿  To https://github.com/superyngo/weni.git
       * [new tag]         v0.1.0 -> v0.1.0
 
 ● Bash(gh run list --workflow=release.yml --limit 3)
@@ -958,7 +958,7 @@ ase.yml")建構所有targets
        18    # CLI & serialization
        19    pico-args = "0.5"
 
-● Bash(rm "D:\Users\user\Documents\rust\Weni\src\collectors\display.rs")
+● Bash(rm "D:\Users\user\Documents\rust\weni\src\collectors\display.rs")
   ⎿  (No content)
 
 ● Read(src\collectors\mod.rs)
